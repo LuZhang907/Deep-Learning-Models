@@ -1,0 +1,25 @@
+#PBS -l select=1:ncpus=128:ngpus=1:mem=256gb
+#PBS -l walltime=2:00:00
+#PBS -M z1856273@students.niu.edu                   
+#PBS -m bae
+#PBS -j oe
+
+# Change to the directory where the 'qsub' command was executed.
+cd $PBS_O_WORKDIR
+
+echo '****************************************************'
+echo "Job starting at: `date`"
+echo '****************************************************'
+#set -x         
+source /etc/profile.d/conda.sh
+conda activate ml4t
+# load extra modules if needed
+# module load cuda/cuda-xx.x
+module load cuda/cuda-12.2
+
+python ml4t_FNN_letNet5.py
+conda deactivate
+set +x
+echo '****************************************************'
+echo "Job completed at: `date`"
+echo '****************************************************'
