@@ -1,0 +1,51 @@
+****************************************************
+Job starting at: Thu Sep  5 14:18:32 CDT 2024
+****************************************************
+Error.  nthreads cannot be larger than environment variable "NUMEXPR_MAX_THREADS" (64)<class 'pandas.core.frame.DataFrame'>
+MultiIndex: 2530228 entries, ('BRK_A', Timestamp('2000-01-03 00:00:00')) to ('BLL', Timestamp('2017-12-29 00:00:00'))
+Data columns (total 5 columns):
+ #   Column  Dtype  
+---  ------  -----  
+ 0   open    float64
+ 1   close   float64
+ 2   low     float64
+ 3   high    float64
+ 4   volume  float64
+dtypes: float64(5)
+memory usage: 106.4+ MB
+<class 'pandas.core.frame.DataFrame'>
+DatetimeIndex: 6183 entries, 2000-01-03 to 2024-07-31
+Data columns (total 6 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   Market  6183 non-null   float64
+ 1   SMB     6183 non-null   float64
+ 2   HML     6183 non-null   float64
+ 3   RMW     6183 non-null   float64
+ 4   CMA     6183 non-null   float64
+ 5   RF      6183 non-null   float64
+dtypes: float64(6)
+memory usage: 338.1 KB
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+<class 'pandas.core.frame.DataFrame'>
+MultiIndex: 2499265 entries, ('BRK_A', Timestamp('2000-01-03 00:00:00')) to ('BLL', Timestamp('2017-12-29 00:00:00'))
+Columns: 152 entries, 06_WILLR to 85_CMA
+dtypes: float64(152)
+memory usage: 2.8+ GB
+****************************************************
+Job completed at: Thu Sep  5 14:30:47 CDT 2024
+****************************************************
